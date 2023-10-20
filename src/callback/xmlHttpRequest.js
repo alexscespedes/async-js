@@ -2,7 +2,7 @@ const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 const API_URL = 'https://api.escuelajs.co/api/v1';
 
 function fetchData(urlApi, callback) {
-    let xhttp = new XMLHttpRequest().XMLHttpRequest;
+    let xhttp = new XMLHttpRequest();
 
     xhttp.open('GET', urlApi, true)
     xhttp.onreadystatechange = function (event) {
